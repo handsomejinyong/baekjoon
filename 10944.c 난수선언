@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+
+int main() {
+	int num;
+	srand(time(NULL));
+	num = rand() % 10000 + 1;//1~10000까지
+	printf("%d", num);
+	
+}
