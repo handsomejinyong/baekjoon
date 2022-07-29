@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main(void) {
+	int a, b, c;
+	int bnf;
+
+	scanf("%d %d %d", &a, &b, &c);
+
+	if (b >= c) {
+		printf("-1");
+		return 0;
+		}
+	bnf = a / (c - b) + 1;
+	printf("%d", bnf);
+	return 0;
+
+
+}
