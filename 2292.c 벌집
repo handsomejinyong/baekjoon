@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main(void) {
+	int n;
+	int min = 2, gap = 5;
+	int room = 2;
+	scanf("%d", &n);
+	if (n == 1)
+	{
+		printf("1");
+		return 0;
+	}
+	while (1)
+	{
+
+		if (n >= min && min + gap >= n)
+		{
+			printf("%d", room);
+			break;
+		}
+		min = min + gap + 1;
+		gap = gap + 6;
+		
+		room++;
+
+	}
+	return 0;
+
+
+}
